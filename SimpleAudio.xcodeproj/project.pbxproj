@@ -13,6 +13,7 @@
 		3992079B21715A1D00736C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3992079A21715A1D00736C46 /* Assets.xcassets */; };
 		3992079E21715A1D00736C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3992079C21715A1D00736C46 /* LaunchScreen.storyboard */; };
 		399207A921715A1D00736C46 /* SimpleAudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399207A821715A1D00736C46 /* SimpleAudioTests.swift */; };
+		399207B721715D6600736C46 /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 399207B621715D6600736C46 /* sample.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		399207A421715A1D00736C46 /* SimpleAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		399207A821715A1D00736C46 /* SimpleAudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAudioTests.swift; sourceTree = "<group>"; };
 		399207AA21715A1D00736C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		399207B621715D6600736C46 /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				3992079A21715A1D00736C46 /* Assets.xcassets */,
 				3992079C21715A1D00736C46 /* LaunchScreen.storyboard */,
 				3992079F21715A1D00736C46 /* Info.plist */,
+				399207B321715C0F00736C46 /* Music */,
 			);
 			path = SimpleAudio;
 			sourceTree = "<group>";
@@ -94,6 +97,14 @@
 				399207AA21715A1D00736C46 /* Info.plist */,
 			);
 			path = SimpleAudioTests;
+			sourceTree = "<group>";
+		};
+		399207B321715C0F00736C46 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				399207B621715D6600736C46 /* sample.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,11 @@
 				TargetAttributes = {
 					3992078F21715A1B00736C46 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					399207A321715A1D00736C46 = {
 						CreatedOnToolsVersion = 10.0;
@@ -180,6 +196,7 @@
 				3992079E21715A1D00736C46 /* LaunchScreen.storyboard in Resources */,
 				3992079B21715A1D00736C46 /* Assets.xcassets in Resources */,
 				3992079921715A1B00736C46 /* Main.storyboard in Resources */,
+				399207B721715D6600736C46 /* sample.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
